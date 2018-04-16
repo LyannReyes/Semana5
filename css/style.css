@@ -1,0 +1,42 @@
+body{
+  background-color: magenta;
+  }
+
+  @-webkit-keyframes coloranim {
+    0% {
+      margin-left: -100px;
+      background-color:red;
+      border-radius: 100px;
+      -webkit-transform: rotate(90dg);
+    }
+    50% {
+      background-color:yellow;
+      border: 5px dotted green;
+    }
+    100% {
+      background-color:blue;
+      -webkit-transform: rotate(180deg);
+    }
+  }
+
+.rectangulo{
+  font-family: "Game Over";
+  color: #262626;
+  font-size: 36px;
+  position:absolute;
+  background-color:blue;
+  top: 100px;
+  left: 300px;
+  width: 100px;
+  height: 200px;
+  border:10px dotted black;
+    background-color:black;
+    width:70px;
+    height:70px;
+    -webkit-animation-name: coloranim;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction:alternate;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+
